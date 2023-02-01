@@ -54,21 +54,3 @@ const createFile = () => {
     return true;
     }
 
-
-// function saveFile() {
-//   //   alert("Entered");
-//   let txtarea = document.getElementById("txtarea");
-//   if (fs.writeFile("textareaValue.txt",txtarea.value,function (err) {
-//         if (err) {
-//           alert("Error");
-//           console.error(err);
-//           return false;
-//         }
-//       }
-//     )
-//   ) {
-//     alert("Success");
-//     return true;
-//   }
-// }
-
