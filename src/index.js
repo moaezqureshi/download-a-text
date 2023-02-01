@@ -13,7 +13,7 @@ const createWindow = () => {
     }
   })
 
-  win.loadFile('../demo-app/src/msg.html')
+  win.loadFile('../demo-app/src/index.html')
 }
 
 app.whenReady().then(() => {
