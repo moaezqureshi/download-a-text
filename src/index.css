@@ -1,0 +1,54 @@
+@font-face {
+  font-family: ReenieBeanie;
+  src: url(./ReenieBeanie-Regular.ttf);
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'ReenieBeanie' , sans-serif;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+#main{
+  background: linear-gradient(226.42deg, #E6E6E6 1.56%, #FFFFFF 100% );
+
+  
+}
+h3 {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.flex{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex input,textarea {
+  height: 58px;
+  width: 345px;
+  padding: 1rem;
+  margin: 5px 0px;
+  box-shadow: -7px 7px 30px #aaaaaa;
+  font-size: 30px;
+}
+textarea{
+  height: 237px;
+  width: 413px;
+}
+.btn {
+  height: 40px !important;
+  width: 100px !important;
+  padding: 0.5rem !important;
+  align-self: flex-end;
+  margin-top: 36px !important;
+  font-size: 25px !important;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Your Mesaage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main">
+        <form action="#" class="flex" name="download" method="post">
+    
+         <div class="flex">
+          <h3>Notes</h3>
+          <textarea type="text" id="text">If you can dream it, you can do it</textarea>
+          
+          <input type="button" id="download" class="btn" value="Save" >
+         </div>
+    
+        </form>
+    
+      </div>
+</body>
+<script type="text/javascript">
+    function downloadFile(content) {
+        const element = document.createElement('a');
+        const blob = new Blob([content], {
+            type: 'plain/text'
+        });
+        const fileUrl = URL.createObjectURL(blob);
+        element.setAttribute('href', fileUrl)
+        element.setAttribute('download', "data.txt");
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    };
+
+    window.onload = () => {
+        document.getElementById('download').addEventListener('click', e => {
+            const content = document.getElementById('text').value;
+
+            if (content) {
+                downloadFile(content);
+            }
+        })
+    }
+</script>
+
+</html>
